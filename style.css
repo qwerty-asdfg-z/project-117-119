@@ -1,32 +1,38 @@
-body
+h1
 {
-  color: white;
-  background: #c0d3ff;
+  font-family: 'Special Elite', fantasy;
+  color:rgb(38, 0, 255);
+  background-color: cornsilk;
 }
-span
+
+#show_sketch
 {
-  font-size: 30px;
+  float:right;
 }
-#camera , #result
-{
-  border: 2px dashed black;
-  width: 350px;
-  height: 300px; 
+
+canvas 
+  {
+    border:5px solid white;
+    border-radius:20px;
+    margin-top:150px;
+    box-shadow:5px 5px 5px grey;
+    box-shadow: 1px 1px 38px #ffffff;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
-#result_emotion_name ,#result_emotion_name2  
-{
-  color: black;
+@keyframes example {
+
+  from {box-shadow: 1px 1px 38px grey;}
+  to {box-shadow: 1px 1px 38px white;}
+
 }
-.emotion_name
-{
-  font-size: 40px;
-}
-.emoji
-{
-  font-size:48px;
-}
-.heading{
-  font-size: 18px;
- border-radius: 10px;
- letter-spacing: 10px;
-}
+
+
+p, span
+  {
+    padding-top:10px;
+    font-family: 'Special Elite', fantasy;
+    font-size:25px;
+    
+  }
